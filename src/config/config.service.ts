@@ -43,6 +43,7 @@ export class ConfigService {
      * Comma separate list of bull queue prefixes to
      * monitor (default: bull)
      */
+    REDIS_TLS: bool({ default: false }),
     BULL_WATCH_QUEUE_PREFIXES: str({ default: 'bull' }),
     /**
      * Fetch queue metrics ever N milliseconds (default 60 seconds)

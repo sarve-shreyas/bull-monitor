@@ -25,6 +25,7 @@ import { BullMQMetricsFactory } from './bullmq-metrics.factory';
               port: configService.config.REDIS_PORT,
               db: configService.config.REDIS_DB,
               enableReadyCheck: true,
+              tls: {},
               reconnectOnError: () => true,
             };
           },
